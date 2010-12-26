@@ -1,7 +1,6 @@
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
-require 'gemspec'
 require "rake/gempackagetask"
 
 desc 'Default: run unit tests.'
@@ -28,7 +27,7 @@ end
 spec = Gem::Specification.new do |s|
 
   s.name        = "mobile-fu"
-  s.version     = "3.0.0"
+  s.version     = "2.0.0"
   s.platform    = Gem::Platform::RUBY
 
   s.authors     = ["Thomas Lundström"]
