@@ -27,7 +27,7 @@ end
 spec = Gem::Specification.new do |s|
 
   s.name        = "mobile-fu"
-  s.version     = "2.0.0"
+  s.version     = "2.0.1"
   s.platform    = Gem::Platform::RUBY
 
   s.authors     = ["Thomas Lundström"]
@@ -48,7 +48,7 @@ spec = Gem::Specification.new do |s|
 #todo: here, add development dep to rspec
 #s.add_development_dependency("rspec")
 
-  s.files        = Dir["{lib}/**/*.rb", "MIT-LICENSE", "README.rdoc", "CHANGELOG"]
+  s.files        = Dir["{lib}/**/*.rb", "rails/init.rb", "MIT-LICENSE", "README.rdoc", "CHANGELOG"]
 
   s.require_path = 'lib'
 end

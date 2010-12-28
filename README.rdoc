@@ -7,19 +7,19 @@ of the request from :html to :mobile.
 
 == Rails 3 Compatibility
 
-The master branch of this plugin is Rails 3 compatible.  
-
-To use the Rails 3 compatible version of this plugin, please install it like so:
-
-    rails plugin install git@github.com:brendanlim/mobile-fu.git
+See the master branch of this gem.
 
 == Rails 2 Compatibility
 
-You will need to install this plugin from the 2.x branch.
+You will need to install this gem from the 2.x branch.
 
-To use the Rails 3 compatible version of this plugin, please install it like so:
+To use the Rails 2 compatible version of this gem, please add it to your Gemfile:
 
-    script/plugin install git@github.com:brendanlim/mobile-fu.git -r 2.x
+    gem "mobile-fu", "2.0.1"
+
+Then, tell Rails to load the gem in config/environment.rb:
+
+    config.gem "mobile-fu", :version=>'=2.0.1'
 
 == Usage
 
@@ -60,13 +60,16 @@ baked in to Mobile Fu.
 If you are including a css or sass file via stylesheet_link_tag, all you have
 to do is add _device to the name of one of your files to override your styling
 for a certain device.  The stylesheet that is loaded is dependant on which device 
-is making the request.
+is making the request. Additionally, a generic mobile stylesheet is loaded.
 
   e.g., Accessing a page from a Blackberry.
 
-  ...  stylesheet_link_tag 'mobile.css' ...
+  ...  stylesheet_link_tag 'stylesheet.css' ...
 
-  This loads mobile.css, and mobile_blackberry.css if the file exists.
+  This loads stylesheet.css, stylesheet_mobile.css and stylesheet_blackberry.css if the file exists.
+
+  stylesheet_blackberry.css has highest precedence, with stylesheet_mobile.css as second,
+  and stylesheet.css third.
 
 Supported stylesheet override device extensions at the moment are:
 

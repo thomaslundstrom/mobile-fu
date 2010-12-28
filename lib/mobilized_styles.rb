@@ -54,7 +54,9 @@ module MobilizedStyles
     sources.each do |source|
       subbed_source = source.to_s.gsub(".css","")
 
-      possible_sources = ["#{subbed_source.to_s}_#{user_agent_device_name}"]
+      possible_sources = []
+      possible_sources << ["#{subbed_source.to_s}_mobile"] if session[:mobile_view]
+      possible_sources << ["#{subbed_source.to_s}_#{user_agent_device_name}"]
 
       mobilized_sources << source
 
