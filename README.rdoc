@@ -68,8 +68,8 @@ is making the request. Additionally, a generic mobile stylesheet is loaded.
 
   This loads stylesheet.css, stylesheet_mobile.css and stylesheet_blackberry.css if the file exists.
 
-  stylesheet_blackberry.css has highest precedence, with stylesheet_mobile.css as second,
-  and stylesheet.css third.
+  Styles in stylesheet_blackberry.css has highest precedence, with
+  stylesheet_mobile.css as second, and stylesheet.css third.
 
 Supported stylesheet override device extensions at the moment are:
 
