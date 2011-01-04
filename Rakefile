@@ -30,9 +30,9 @@ spec = Gem::Specification.new do |s|
   s.version     = "2.0.1"
   s.platform    = Gem::Platform::RUBY
 
-  s.authors     = ["Thomas Lundström"]
-  s.email       = ["thomas.lundstrom@gmail.com"]
-  s.homepage    = "https://github.com/thomaslundstrom/mobile-fu/"
+  s.authors     = ["The Author's Name"]
+  s.email       = ["the.authors@email.address.com"]
+  s.homepage    = "https://github.com/brendanlim/mobile-fu/"
 
   s.summary     = "Automatically detect mobile requests from mobile devices in your Rails application."
   s.description = "Want to automatically detect mobile devices that access your Rails application? Mobile Fu allows you to do just that. People can access your site from a Palm, Blackberry, iPhone, iPad, Nokia, etc. and it will automatically adjust the format of the request from :html to :mobile."
@@ -43,8 +43,6 @@ spec = Gem::Specification.new do |s|
 #  s.rubyforge_project         = "mobile-fu"
 
   # If you have other dependencies, add them here
-# do we need a dep to Rails?
-  # s.add_dependency "another", "~>; 1.2"
 #todo: here, add development dep to rspec
 #s.add_development_dependency("rspec")
 
