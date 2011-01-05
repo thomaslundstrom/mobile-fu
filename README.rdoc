@@ -11,7 +11,7 @@ You will need to install this gem from the master branch.
 
 Please install it like a Rails Plugin:
 
-    script/plugin install git://github.com/brendanlim/mobile-fu.git
+    rails plugin install git://github.com/brendanlim/mobile-fu.git
 
 == Rails 2 Compatibility
 
