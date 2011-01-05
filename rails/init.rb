@@ -1,6 +1,6 @@
-require File.dirname(__FILE__) + '/lib/mobile_fu_helper.rb'
-require File.dirname(__FILE__) + '/lib/mobilized_styles'
-require File.dirname(__FILE__) + '/lib/mobile_fu'
+require File.dirname(__FILE__) + '/../lib/mobile_fu_helper'
+require File.dirname(__FILE__) + '/../lib/mobilized_styles'
+require File.dirname(__FILE__) + '/../lib/mobile_fu'
 
 ActionView::Base.send(:include, MobileFuHelper)
 ActionView::Base.send(:include, MobilizedStyles)
