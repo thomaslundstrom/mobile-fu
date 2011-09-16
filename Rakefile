@@ -46,7 +46,7 @@ spec = Gem::Specification.new do |s|
 #todo: here, add development dep to rspec
 #s.add_development_dependency("rspec")
 
-  s.files        = Dir["{lib}/**/*.rb", "rails/init.rb", "MIT-LICENSE", "README.rdoc", "CHANGELOG"]
+  s.files        = Dir["{lib}/**/*.rb", "init.rb", "MIT-LICENSE", "README.rdoc", "CHANGELOG"]
 
   s.require_path = 'lib'
 end
